@@ -62,6 +62,7 @@ poselib = { path = "poselib", editable = true }
 test_isaacgym = "python -c 'import isaacgym, torch; print(torch.cuda.is_available())'"
 test_train = "python phys_anim/train_agent.py +exp=amp motion_file=data/motions/amp_humanoid_walk.npy +robot=amp +backbone=isaacgym"
 test_eval = "python phys_anim/eval_agent.py +robot=amp +backbone=isaacgym +motion_file=data/motions/amp_humanoid_walk.npy +checkpoint=results/amp/last.ckpt +headless=False"
+play_motion = "python phys_anim/scripts/play_motion.py data/motions/smplx_humanoid_walk.npy isaacgym smplx"
 
 [tool.pixi.activation]
 scripts = ["env_setup.sh"]

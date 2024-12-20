@@ -1,6 +1,7 @@
 */babel/*.json
 .idea
 .pixi
+output
 outputs
 results
 *.egg-info
